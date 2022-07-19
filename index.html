@@ -10,18 +10,117 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CSS -->
 
+    <!--  Swiper css  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!--  Swiper css  -->
+
     <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   </head>
   <body>
+<!---------------------------------------------------- Services section  --------------------------------->
+
+        <section class="container-fluid section-service">
+          <h1>Enjoy our cleaning services in Ghana!</h1>
+                          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="card" style="width: 22rem; height: 22rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">House Cleaning</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="card" style="width: 22rem; height: 22rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Deep cleaning</h5>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="card" style="width: 22rem; height: 22rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Office cleaning</h5>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="card" style="width: 22rem; height: 22rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Carpet cleaning</h5>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="card" style="width: 22rem; height: 22rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Moving cleaning</h5>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Swiper JS -->
+        
+        </section>
+
+<!---------------------------------------------------- Services section  --------------------------------->
+
+
+
+
+
+
+
+
     <!-- Javascript script -->
     <script src="assets/js/main.js"></script>
     <!-- Javascript script -->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+   
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
   </body>
 </html>
