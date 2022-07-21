@@ -7,7 +7,7 @@ $(document).ready(function () {
       });  
 
 
-    //Owl
+    //Owl-carousel
     $('.hero-slider').owlCarousel({
         loop: true,
         margin: 0,
@@ -29,6 +29,8 @@ $(document).ready(function () {
 });
 
 
+
+// Initialize Swiper
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,

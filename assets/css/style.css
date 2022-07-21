@@ -32,6 +32,9 @@ h1,h2,h3,h4,h5,h6,
 
 
 
+/*------x--------------Header------------------x----*/
+
+
 /*----Navbar-------*/
 
 .navbar{
@@ -247,9 +250,6 @@ nav ul li{
     color: #ff523b;
 }
 
-/*---x-------hero-------x-----*/
-
-
 
 /*----------Mobile Responsive------x-------*/
 
@@ -303,7 +303,7 @@ nav ul li{
     
 }
 
-/*----------Mobile Responsive------x-------*/
+/*---------x----------------Header--------------x-------*/
 
 
 
@@ -384,6 +384,10 @@ html {
     border: none;
 }
 
+.swiper-slide h5{
+    color: #ffffff;
+}
+
 .card-body::before {
     content: '';
     position: absolute;
@@ -450,6 +454,14 @@ html {
     }
 }
 
+
+
+/*------x------ Services section --------x----*/
+
+
+
+
+
 .footer-distributed{
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -482,7 +494,7 @@ html {
 }
 
 .footer-distributed h3 span{
-    color:  lightseagreen;
+    color:  var(--brand);
 }
 
 /* Footer links */
@@ -548,7 +560,7 @@ html {
 }
 
 .footer-distributed .footer-center p a{
-    color:  lightseagreen;
+    color:  var(--brand);
     text-decoration: none;;
 }
 
