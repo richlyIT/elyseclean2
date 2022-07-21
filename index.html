@@ -132,64 +132,31 @@
   
 <!---------------------------------------------------- Services section  --------------------------------->
 
-        <section class="container-fluid section-service" id="services">
-          <h1>Enjoy our cleaning services in Ghana!</h1>
-                          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="card" style="width: 22rem; height: 22rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">House Cleaning</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="card" style="width: 22rem; height: 22rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Deep cleaning</h5>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="card" style="width: 22rem; height: 22rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Office cleaning</h5>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="card" style="width: 22rem; height: 22rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Carpet cleaning</h5>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <div class="card" style="width: 22rem; height: 22rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Moving cleaning</h5>
-                  </div>
-                </div>
-                </a>
+        <section class="section-service" id="services">
+          <h1 class="service-title">Enjoy our cleaning services in Ghana!</h1>
+                          
+          <!-- Swiper-->
+          <div class="swiper-container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
               </div>
             </div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
+          <!-- Swiper-->
 
-          <!-- Swiper JS -->
+          
+          <div class="swiper-pagination"></div>
         
         </section>
 
@@ -265,6 +232,40 @@
 
 </footer>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          }
+        }
+      });
+    </script>
 
    <!------------jquery--------->
    <script src="assets/vender/jquery/jquery.js"></script>
