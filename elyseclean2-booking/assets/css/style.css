@@ -1,0 +1,546 @@
+/*------------ Services section --------*/
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+.section-service {
+    background: #D6D6D6;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.section-service h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 4rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background: #D6D6D6;
+    padding-bottom: 4rem;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swiper-slide a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.swiper-slide a:hover {
+    color: #6c33e6;
+}
+
+.card {
+    background: linear-gradient(rgba(15, 15, 15, 0.884), rgba(15, 15, 15, 0.884)), url("../images/3.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.card-body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    box-sizing: border-box;
+    transition: all .8s ease;
+}
+
+.card-body::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    box-sizing: border-box;
+    transition: all .8s ease;
+}
+
+.card:hover .card-body::after,
+.card:hover .card-body::before {
+    width: 100%;
+    height: 100%;
+    color: #6c33e6;
+}
+
+.card:hover {
+    padding: 6rem 2rem;
+}
+
+
+/* ------------------About Section------------------ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+ }
+ 
+ .glass{
+      /* From https://css.glass */
+ background: rgba(255, 255, 255, 0.2);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ 
+ }
+ 
+ .about-container{
+  
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1067%26quot%3b)' fill='none'%3e%3crect width='312' height='312' clip-path='url(%26quot%3b%23SvgjsClipPath1068%26quot%3b)' x='677.41' y='136.17' fill='url(%23SvgjsPattern1069)' transform='rotate(334%2c 833.41%2c 292.17)'%3e%3c/rect%3e%3crect width='198.64' height='198.64' clip-path='url(%26quot%3b%23SvgjsClipPath1070%26quot%3b)' x='-46.38' y='177.19' fill='url(%23SvgjsPattern1071)' transform='rotate(151.28%2c 52.94%2c 276.51)'%3e%3c/rect%3e%3ccircle r='82.92253674751124' cx='1311.61' cy='52.17' stroke='rgba(19%2c 20%2c 23%2c 1)' stroke-width='1.01' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3cpath d='M1091.16 547.45a5.6 5.6 0 1 0 11.07 1.71 5.6 5.6 0 1 0-11.07-1.71zM1106.97 549.89a5.6 5.6 0 1 0 11.07 1.72 5.6 5.6 0 1 0-11.07-1.72zM1122.79 552.34a5.6 5.6 0 1 0 11.06 1.71 5.6 5.6 0 1 0-11.06-1.71zM1138.6 554.78a5.6 5.6 0 1 0 11.07 1.72 5.6 5.6 0 1 0-11.07-1.72zM1057.09 558.37a5.6 5.6 0 1 0 11.07 1.71 5.6 5.6 0 1 0-11.07-1.71zM1072.9 560.82a5.6 5.6 0 1 0 11.07 1.71 5.6 5.6 0 1 0-11.07-1.71zM1088.72 563.26a5.6 5.6 0 1 0 11.06 1.71 5.6 5.6 0 1 0-11.06-1.71zM1104.53 565.71a5.6 5.6 0 1 0 11.07 1.71 5.6 5.6 0 1 0-11.07-1.71z' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/path%3e%3crect width='132' height='132' clip-path='url(%26quot%3b%23SvgjsClipPath1072%26quot%3b)' x='-9.89' y='60.42' fill='url(%23SvgjsPattern1073)' transform='rotate(113.07%2c 56.11%2c 126.42)'%3e%3c/rect%3e%3cpath d='M847.34 92.28 L960.6700000000001 104.30000000000001L955.8681170332242 46.426882966775935z' stroke='rgba(19%2c 20%2c 23%2c 1)' stroke-width='2.1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3ccircle r='46.666666666666664' cx='372.99' cy='293.97' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/circle%3e%3crect width='158.88' height='158.88' clip-path='url(%26quot%3b%23SvgjsClipPath1074%26quot%3b)' x='800.52' y='211.69' fill='url(%23SvgjsPattern1075)' transform='rotate(180.7%2c 879.96%2c 291.13)'%3e%3c/rect%3e%3crect width='121.28' height='121.28' clip-path='url(%26quot%3b%23SvgjsClipPath1076%26quot%3b)' x='205.93' y='469.17' fill='url(%23SvgjsPattern1077)' transform='rotate(83.74%2c 266.57%2c 529.81)'%3e%3c/rect%3e%3ccircle r='77.8082295731129' cx='20.65' cy='166.79' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/circle%3e%3crect width='300' height='300' clip-path='url(%26quot%3b%23SvgjsClipPath1078%26quot%3b)' x='445.49' y='203.13' fill='url(%23SvgjsPattern1079)' transform='rotate(22.3%2c 595.49%2c 353.13)'%3e%3c/rect%3e%3crect width='72.2' height='72.2' clip-path='url(%26quot%3b%23SvgjsClipPath1080%26quot%3b)' x='1266.66' y='175.12' fill='url(%23SvgjsPattern1081)' transform='rotate(257.34%2c 1302.76%2c 211.22)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1067'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='12' height='12' patternUnits='userSpaceOnUse' id='SvgjsPattern1069'%3e%3cpath d='M6 1L6 11M1 6L11 6' stroke='rgba(19%2c 20%2c 23%2c 1)' fill='none' stroke-width='1.76'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1068'%3e%3ccircle r='78' cx='833.41' cy='292.17'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='198.64' height='7.64' patternUnits='userSpaceOnUse' id='SvgjsPattern1071'%3e%3crect width='198.64' height='3.82' x='0' y='0' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/rect%3e%3crect width='198.64' height='3.82' x='0' y='3.82' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1070'%3e%3ccircle r='49.66' cx='52.94' cy='276.51'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='13.2' height='13.2' patternUnits='userSpaceOnUse' id='SvgjsPattern1073'%3e%3cpath d='M6.6 1L6.6 12.2M1 6.6L12.2 6.6' stroke='rgba(19%2c 20%2c 23%2c 1)' fill='none' stroke-width='4.45'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1072'%3e%3ccircle r='33' cx='56.11' cy='126.42'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='158.88' height='6.62' patternUnits='userSpaceOnUse' id='SvgjsPattern1075'%3e%3crect width='158.88' height='3.31' x='0' y='0' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/rect%3e%3crect width='158.88' height='3.31' x='0' y='3.31' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1074'%3e%3ccircle r='39.72' cx='879.96' cy='291.13'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='121.28' height='7.58' patternUnits='userSpaceOnUse' id='SvgjsPattern1077'%3e%3crect width='121.28' height='3.79' x='0' y='0' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/rect%3e%3crect width='121.28' height='3.79' x='0' y='3.79' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1076'%3e%3ccircle r='30.32' cx='266.57' cy='529.81'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1079'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(19%2c 20%2c 23%2c 1)' fill='none' stroke-width='1.55'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1078'%3e%3ccircle r='75' cx='595.49' cy='353.13'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='72.2' height='7.22' patternUnits='userSpaceOnUse' id='SvgjsPattern1081'%3e%3crect width='72.2' height='3.61' x='0' y='0' fill='rgba(19%2c 20%2c 23%2c 1)'%3e%3c/rect%3e%3crect width='72.2' height='3.61' x='0' y='3.61' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1080'%3e%3ccircle r='18.05' cx='1302.76' cy='211.22'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+ 
+
+ background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(91,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23BBBBBB'/%3E%3Cstop offset='1' stop-color='%23555555'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(64,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='15.51'%3E%3Cpath transform='translate(-81.9 0.7999999999999989) rotate(-4.300000000000001 1409 581) scale(0.934736)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='5.170000000000001' transform='translate(-114 66) rotate(3.799999999999999 800 450) scale(1.0007279999999998)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(8.200000000000003 -54) rotate(22 401 736) scale(1.0007279999999998)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4.7'%3E%3Cpath transform='translate(396 5.6) rotate(-1.4 150 345) scale(0.996912)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='10.340000000000002' transform='translate(-88 -181) rotate(7.200000000000003 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-216.8 55.2) rotate(1.1999999999999993 1400 132) scale(0.84)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+ 
+ 
+ }
+
+
+  
+ 
+ 
+ .about-container svg{
+ position: relative;
+ top: 0;
+ }
+ 
+ .about{
+     padding: 2rem;
+     max-width: 80%;
+     margin: auto;
+     text-align: center;
+ 
+     
+ 
+     
+ }
+ 
+ .about h4{
+     text-transform: uppercase;
+ }
+ 
+ .about h4,p, h1{
+      padding-top: 1em;
+ }
+ 
+ .figures{
+     display: flex;
+     max-width: 90%;
+     margin: auto;
+     flex-wrap: wrap;
+     padding: 1rem;
+     justify-content: center;
+     align-content: center;
+   
+ }
+
+ .figures .item{
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.51);
+border-radius: 4px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: .5rem;
+margin: 1rem;
+ }
+ 
+
+ 
+ 
+ .about button{
+     background-color: #000;
+     color: #fff;
+     border: 1px solid #000;
+     padding: 1rem;
+     width: 10em;
+     margin: 1rem 0 2rem 0;
+     border-radius: 4px;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ .about button:hover{
+     color: #d6d6d6;
+ }
+ 
+ .about .item h3{
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+ /* -------------About section----------- */
+ 
+ 
+ /* ---------------Booking Section------------------ */
+ 
+ *{
+    padding: 0;
+    margin: 0;
+}
+
+
+.booking-container{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    
+}
+
+.booking{
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.booking h1, .booking p, .bonus .item{
+    padding-top: 2rem;
+}
+
+
+
+.bonus{
+    display: flex;
+    justify-content: center;
+}
+
+.bonus .item{
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(214, 214, 214, 0.29);
+border-radius: 4px;
+box-shadow: 0 4px 40px rgba(214, 214, 214, 0.2);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+padding: .5rem;
+margin: 1rem;
+
+padding: 1rem;
+}
+
+.bonus .item p{
+    padding-top: 0;
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+
+ .steps{
+    display: flex;
+   justify-content: center;
+    
+}
+
+ .case{
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .steps .one, .steps .two{
+    margin-right: 2rem;
+ }
+ 
+
+.case span{
+    background: rgba(214, 214, 214, 0.29);
+border-radius: 4px;
+box-shadow: 0 4px 40px rgba(214, 214, 214, 0.2);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+padding: 1rem;
+margin: 1rem;
+align-self: center;
+
+padding: 1rem;
+}
+
+
+.case h3, .case p{
+    padding-top: 0;
+}
+
+.case{
+    display: flex;
+}
+
+.booking button{
+    background-color: #d6d6d6;
+     color: #000;
+     border: 1px solid #fff;
+     padding: 1rem;
+     width: 10em;
+     margin: 1.6rem 0 2rem 0;
+     border-radius: 4px;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+
+
+ 
+
+ /* ---------------Booking Section------------------ */
+ 
+
+
+/*------------  Responsive  ------------*/
+
+@media only screen and (max-width: 490px) {
+    .swiper-pagination {
+        display: none;
+    }
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        display: none;
+    }
+    /*hello*/
+    .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 100%;
+        padding: 0 50px 0 12px;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-body {
+        width: 22rem;
+        height: 22rem;
+    }
+  
+}
+
+.footer-distributed{
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+  font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+  font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+    font-size: 13px;
+    color: #92999f;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight:normal;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+/*------------  Responsive  ------------*/
+
+
+/*------------ Services section --------*/
