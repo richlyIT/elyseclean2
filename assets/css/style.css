@@ -438,18 +438,13 @@ nav ul li{
 
 .swiper-slide .card-slide img{
   display: block;
-  width:  100%;
-  height: 100%;
-  object-fit: fit;
+  width: 100%;
+  height: 80vh;
   object-position: center;
 }
 
 .swiper-slide .card-slide p{
 position: absolute;
-}
-
-.swiper-slide .card-slide{
-
 }
 
 
