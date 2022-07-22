@@ -388,7 +388,7 @@ nav ul li{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and ( min-width: 768px) {
   .card-layout{
     display: none;
   }
@@ -453,6 +453,10 @@ nav ul li{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .swiper-slide a{
+    text-decoration: none;
+    color: #000;
+  }
   .card-layout{
     display: none;
   }
@@ -524,6 +528,10 @@ nav ul li{
 
 /*---------x---------------Services section--------------x-------*/
 
+
+/*-------x contact and book section x----------/
+
+/*-------x contact and book section x----------/
 
 
 
