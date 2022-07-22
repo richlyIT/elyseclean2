@@ -429,11 +429,22 @@ nav ul li{
     transition: all .8s ease;
 }
 
-.swiper-slide:hover .card-slide::after,
+.swiper-slide:hover .card-slide::after {
+    width: 100%;
+    height: 100%;
+    color: var(--brand);
+}
+
 .swiper-slide:hover .card-slide::before {
     width: 100%;
     height: 100%;
     color: var(--brand);
+    background-color: #fff;
+}
+
+.swiper-slide:hover .card-slide p{
+    color: #000;
+    transition: .1s;
 }
 
 .swiper-slide .card-slide img{
