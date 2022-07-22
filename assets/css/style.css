@@ -517,6 +517,15 @@ nav ul li{
   object-position: center;
 }
 
+.swiper-slide .card-slide p{
+  margin: 0 10px;
+}
+
+#btn{
+  text-align: center;
+  margin-left: 470px;
+  margin-bottom: 50px;
+}
 
 }
 
@@ -529,9 +538,6 @@ nav ul li{
 /*---------x---------------Services section--------------x-------*/
 
 
-/*-------x contact and book section x----------/
-
-/*-------x contact and book section x----------/
 
 
 
