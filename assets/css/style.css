@@ -366,13 +366,18 @@ nav ul li{
   }
 
   .card{
-    background-color: red;
+    background-color: #fff;
+    color: #000000;
     margin-bottom: 30px;
     margin-left: 40px;
     text-align: center;
   }
   .swiper-container{
     display: none;
+  }
+
+  .card-layout{
+    padding-bottom: 20px;
   }
 }
 
@@ -384,6 +389,65 @@ nav ul li{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .card-layout{
+    display: none;
+  }
+
+  .section-service .swiper-container{
+    width: 100%;
+    height: 70vh;
+  }
+  .swiper {
+    width: 90%;
+    height: 60vh;
+    display: block;
+  }
+
+  .card-slide::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    box-sizing: border-box;
+    transition: all .8s ease;
+}
+
+.card-slide::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    box-sizing: border-box;
+    transition: all .8s ease;
+}
+
+.swiper-slide:hover .card-slide::after {
+  width: 100%;
+  height: 100%;
+  color: var(--brand);
+}
+
+.swiper-slide:hover .card-slide::before {
+    width: 100%;
+    height: 100%;
+    color: var(--brand);
+    background: linear-gradient(rgb(134, 134, 134),rgba(231, 231, 231, 0))
+}
+
+.swiper-slide .card-slide img{
+  display: block;
+  width: 100%;
+  height: 40vh;
+  object-position: center;
+}
 
 }
 
@@ -430,32 +494,23 @@ nav ul li{
 }
 
 .swiper-slide:hover .card-slide::after {
-    width: 100%;
-    height: 100%;
-    color: var(--brand);
+  width: 100%;
+  height: 100%;
+  color: var(--brand);
 }
 
 .swiper-slide:hover .card-slide::before {
     width: 100%;
     height: 100%;
     color: var(--brand);
-    background-color: #fff;
-}
-
-.swiper-slide:hover .card-slide p{
-    color: #000;
-    transition: .1s;
+    background: linear-gradient(rgb(134, 134, 134),rgba(231, 231, 231, 0))
 }
 
 .swiper-slide .card-slide img{
   display: block;
   width: 100%;
-  height: 80vh;
+  height: 40vh;
   object-position: center;
-}
-
-.swiper-slide .card-slide p{
-position: absolute;
 }
 
 
