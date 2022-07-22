@@ -403,7 +403,7 @@ nav ul li{
     display: block;
   }
 
-  .swiper-slide::before {
+  .card-slide::before {
     content: '';
     position: absolute;
     left: 0;
@@ -416,7 +416,7 @@ nav ul li{
     transition: all .8s ease;
 }
 
-.swiper-slide::after {
+.card-slide::after {
     content: '';
     position: absolute;
     right: 0;
@@ -429,12 +429,25 @@ nav ul li{
     transition: all .8s ease;
 }
 
-.swiper-wrapper:hover .swiper-slide::after,
-.swiper-wrapper:hover .swiper-slide::before {
+.swiper-slide:hover .card-slide::after,
+.swiper-slide:hover .card-slide::before {
     width: 100%;
     height: 100%;
     color: var(--brand);
 }
+
+.swiper-slide .card-slide img{
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  object-fit: fit;
+  object-position: center;
+}
+
+.swiper-slide .card-slide p{
+position: absolute;
+}
+
 
 }
 
