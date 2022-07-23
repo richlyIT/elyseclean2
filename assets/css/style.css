@@ -379,6 +379,10 @@ nav ul li{
   .card-layout{
     padding-bottom: 20px;
   }
+    
+  #btn{
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
