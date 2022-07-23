@@ -1,10 +1,10 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     //scrollTop
 
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-      });  
+    });
 
 
     //Owl-carousel
@@ -39,11 +39,34 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
+
+
+// Testimonials carousel
+$(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    center: true,
+    margin: 25,
+    dots: true,
+    loop: true,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 3
+        }
+    }
+})(jQuery);
