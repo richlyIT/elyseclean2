@@ -357,7 +357,23 @@ nav ul li{
 /*-------x swiper x--------*/
 
 
-/*------x Responsive x-----*/
+/*---------------------------------------------------x Responsive x--------------------------------------------------------*/
+
+    @media only screen and (max-width: 480px) {
+        #btn {
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            display: none;
+        }
+        .card-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 50px;
+        }
+    }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .section-service .swiper-container .swiper-button-prev,
@@ -378,10 +394,6 @@ nav ul li{
 
   .card-layout{
     padding-bottom: 20px;
-  }
-    
-  #btn{
-    display: none;
   }
 }
 
