@@ -201,15 +201,16 @@
                                         <section class="container2">
                                             <h4>Service type(20$/each)</h4>
                                             <div class="col-12 col-sm-6 ">
-                                                <select class="form-select border-1 " style="height: 55px; ">
-                                        <option selected type="text ">Select A Service</option>
-                                        <option name="service_type">House cleaning</option>
-                                        <option>Deep cleaning</option>
-                                        <option>office cleaning</option>
-                                        <option>Desinfecting cleaning</option>
-                                        <option>Move in/out cleaning</option>
-                                        </div>
-                                    </select><br>
+                                                <select name="servicetype" class="form-select border-1 " style="height: 55px; ">
+                                                    <option selected type="text ">Select A Service</option>
+                                                    <option>House cleaning</option>
+                                                    <option>Deep cleaning</option>
+                                                    <option>office cleaning</option>
+                                                    <option>Desinfecting cleaning</option>
+                                                    <option>Move in/out cleaning</option>
+                                                </select><br>
+                                            </div>
+                                    
                                                 <div class="col-12 col-sm-6 ">
                                                     <div class="col-12 ">
                                                         <textarea class="form-control border-1 " name="SpecialRequest " placeholder="Special Request " style="height: 55px; width: 220px; " id="specialRequest"></textarea>
@@ -220,9 +221,9 @@
                                         <section>
                                             <div>
                                                 <h4>FREQUENCY(25$/each week)</h4><br>
-                                                <button name="frequency" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);">Every week</button>
-                                                <button name="frequency" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);">Every 2 weeks</button>
-                                                <button name="frequency" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);">Every 4 weeks</button>
+                                                <button name="frequency1" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every week">Every week</button>
+                                                <button name="frequency2" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every 2 weeks">Every 2 weeks</button>
+                                                <button name="frequency3" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every 4 weeks">Every 4 weeks</button>
                                                 <h2><br></h2>
                                             </div>
                                         </section>
@@ -232,45 +233,45 @@
                                             <div>
                                                 <h4>SERVICE</h4><br>
                                                 <div class="col-12 col-sm-6 py-4">
-                                                    <select name="bedroom" class="form-select border-1" style="height: 55px;  width: 220px;">
-                                        <option value="1"  id="bedroom"selected type="text">Bedrooms(10$/each)</option>
-                                        <option value="2">1 Bedroom</option>
-                                        <option value="3">2 Bedrooms</option>
-                                        <option value="4">3 Bedrooms</option>
-                                        <option value="5">4 Bedrooms</option>
-                                        <option value="6">5 Bedrooms</option>
-                                    </select>
+                                                    <select name="bedroom" id="bedroom" class="form-select border-1" style="height: 55px;  width: 220px;">
+                                                        <option selected type="text">Bedrooms(10$/each)</option>
+                                                        <option>1 Bedroom</option>
+                                                        <option>2 Bedrooms</option>
+                                                        <option>3 Bedrooms</option>
+                                                        <option>4 Bedrooms</option>
+                                                        <option>5 Bedrooms</option>
+                                                    </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4">
-                                                    <select id="bathroom" class="form-select border-1 " name="bathroom" style="height: 55px; width: 220px; ">
-                                                    <option value="1" selected type="text "id="bathroom">Bathrooms(10$/each)</option>
-                                                    <option value="2">1 Bathroom</option>
-                                                    <option value="3">2 Bathrooms</option>
-                                                    <option value="4">3 Bathrooms</option>
-                                                    <option value="5">4 Bathrooms</option>
-                                                    <option value="6">5 Bathrooms</option>
-                                                </select>
+                                                    <select name="bathroom" id="bathroom" class="form-select border-1 " style="height: 55px; width: 220px; ">
+                                                        <option selected type="text">Bathrooms(10$/each)</option>
+                                                        <option>1 Bathroom</option>
+                                                        <option>2 Bathrooms</option>
+                                                        <option>3 Bathrooms</option>
+                                                        <option>4 Bathrooms</option>
+                                                        <option>5 Bathrooms</option>
+                                                    </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4">
-                                                    <select id="half_bathroom" class="form-select border-1 " name="half_bathroom" style="height: 55px; width: 220px;">
-                                        <option value="1" selected type="text">Half Baths(10$/each)</option>
-                                        <option value="2">1 half bathroom</option>
-                                        <option value="3">2 half bathrooms</option>
-                                        <option value="4">3 half bathrooms</option>
-                                        <option value="5">4 half bathrooms</option>
-                                        <option value="6">5 half bathrooms</option>
-                                    </select>
+                                                    <select id="half_bathroom" name="half_bathroom" class="form-select border-1 " style="height: 55px; width: 220px;">
+                                                        <option selected type="text">Half Baths(10$/each)</option>
+                                                        <option>1 half bathroom</option>
+                                                        <option>2 half bathrooms</option>
+                                                        <option>3 half bathrooms</option>
+                                                        <option>4 half bathrooms</option>
+                                                        <option>5 half bathrooms</option>
+                                                    </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4" id="zozo1">
-                                                    <select class="form-select border-1 " name="sq_ft[]" style="height: 55px; width: 220px;">
-                                        <option value=""  id="sq_ft" selected type="text">Sq Ft</option>
-                                        <option value="1 - 999 Sq Ft">1 - 999 Sq Ft</option>
-                                        <option value="1000 - 1499 Sq Ft">1000 - 1499 Sq Ft</option>
-                                        <option value="1500 - 1999 Sq Ft">1500 - 1999 Sq Ft</option>
-                                    </select>
+                                                    <select id="sq_ft"  name="sq_ft" class="form-select border-1 " style="height: 55px; width: 220px;">
+                                                        <option selected type="text">Sq Ft</option>
+                                                        <option>1 - 999 Sq Ft</option>
+                                                        <option>1000 - 1499 Sq Ft</option>
+                                                        <option>1500 - 1999 Sq Ft</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </section>
@@ -330,31 +331,31 @@
                                                 <p>How Did You Hear About Us?
                                                     <div class="checkbox-grid">
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property4" value="home" /> Google
+                                                            <input type="checkbox" name="property4" value="Google" /> Google
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property5" value="home" /> Yelp
+                                                            <input type="checkbox" name="property5" value="Yelp" /> Yelp
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property6" value="home" /> Facebook
+                                                            <input type="checkbox" name="property6" value="Facebook" /> Facebook
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property7" value="home" /> Craigslist
+                                                            <input type="checkbox" name="property7" value="Craigslist" /> Craigslist
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property8" value="home" /> Email
+                                                            <input type="checkbox" name="property8" value="Email" /> Email
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property9" value="home" /> Friend
+                                                            <input type="checkbox" name="property9" value="Friend" /> Friend
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property10" value="home" /> NextDoor
+                                                            <input type="checkbox" name="property10" value="NextDoor" /> NextDoor
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property11" value="home" /> HomeAdvisor
+                                                            <input type="checkbox" name="property11" value="HomeAdvisor" /> HomeAdvisor
                                                         </div>
                                                         <div class="checkbox-box">
-                                                            <input type="checkbox" name="property12" value="home" /> OfferUp
+                                                            <input type="checkbox" name="property12" value="OfferUp" /> OfferUp
                                                         </div>
                                                     </div>
                                                     <hr>
@@ -383,7 +384,7 @@
                                             <h3>Service Date</h3><br>
                                             <div class="col-12 col-sm-6">
                                                 <div class="date" id="date1" data-target-input="nearest">
-                                                    <input type="date" name="service date" class="form-control border-1 datetimepicker-input" placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;"> <br>
+                                                    <input type="date" name="servicedate" class="form-control border-1 datetimepicker-input" placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;"> <br>
                                                 </div>
                                         </section>
 
@@ -391,23 +392,23 @@
                                         <section class="container6">
                                             <h4>CONTACT INFO</h4><br>
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="text " name=" FirstName " class="form-control border-1 " placeholder="Your First Name " style="height: 55px;">
+                                                <input type="text " name="firstname" class="form-control border-1 " placeholder="Your First Name " style="height: 55px;">
                                             </div>
                                             <div class="col-12 col-sm-6 py-4" id="Name">
-                                                <input type="text " name="Name" class="form-control border-1 " placeholder="Your Name " style="height: 55px;">
+                                                <input type="text " name="lastname" class="form-control border-1 " placeholder="Your Name " style="height: 55px;">
                                             </div>
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="email " name="mail" class="form-control border-1 " placeholder="Your Email " style="height: 55px; "><br>
+                                                <input type="email " name="email" class="form-control border-1 " placeholder="Your Email " style="height: 55px; "><br>
                                             </div>
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="number" name="Number" class="form-control border-1 " placeholder="Your phone number " style="height: 55px; "><br>
+                                                <input type="number" name="number" class="form-control border-1 " placeholder="Your phone number " style="height: 55px; "><br>
                                             </div>
 
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="text" name="Address" class="form-control border-1 " placeholder="Address " style="height: 55px; "><br>
+                                                <input type="text" name="address" class="form-control border-1 " placeholder="Address " style="height: 55px; "><br>
                                             </div>
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="text" name="AptUnit" class="form-control border-1 " placeholder="Apt/Unit " style="height: 55px; "><br>
+                                                <input type="text" name="apartUnit" class="form-control border-1 " placeholder="Apt/Unit " style="height: 55px; "><br>
                                             </div>
                                         </section>
                                         <hr>
@@ -415,11 +416,11 @@
                                             <h3>PAYMENT</h3>
                                             <p>Add a new card</p>
                                             <div class="col-12 col-sm-6 ">
-                                                <input type="text" name="CardNumber" class="form-control border-1 " placeholder="Card number" style="height: 55px; "><br>
+                                                <input type="text" name="cardnumber" class="form-control border-1 " placeholder="Card number" style="height: 55px; "><br>
                                             </div>
                                             <div class="col-12 col-sm-6 CreditCardBox">
                                                 <span class="px-4">Expiration Date</span>
-                                                <input type="number" name="Exp_Date" class="form-control border-1 " placeholder="MM/YYYY" style="height: 55px; "><br>
+                                                <input type="number" name="ExpDate" class="form-control border-1 " placeholder="MM/YYYY" style="height: 55px; "><br>
                                             </div>
                                             <div class="col-12 col-sm-6 py-4 CreditCardBox">
                                                 <span class="px-4">CCV</span>
