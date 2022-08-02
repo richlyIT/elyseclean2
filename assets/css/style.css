@@ -345,7 +345,7 @@
     }
     
     .about h1 {
-        color: #ffffff;
+        color: #000;
     }
     
     .about-container svg {
@@ -611,6 +611,15 @@
         background: var(--brand);
         border-color: var(--brand);
     }
+
+    .btn-book-now{
+        padding: 16px 16px;
+        margin: 30px 0 0 0;
+        background: var(--brand);
+        color: #ffff;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
     /*---------x---------------Services section--------------x-------*/
     /*** Booking ***/
     
@@ -747,11 +756,11 @@
     /* Contact Section */
     
     #contact-1 {
-        background: var(--body);
+        background: var(--dark);
     }
     
     #contact {
-        padding: 100px 0 60px 0;
+        padding: 0 0 60px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -908,7 +917,7 @@
     }
     
     .footer-distributed {
-        background: #666;
+        background: var(--dark);
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         box-sizing: border-box;
         width: 100%;
