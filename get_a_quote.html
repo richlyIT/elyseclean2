@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS v5.2.0-beta1 -->
+        <link rel="stylesheet" href="./assets/vender/bootstrap/js/bootstrap.min.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+        <!-- BoxIcons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
+    
+        <!-- owl-carosel css-->
+        <link rel="stylesheet" href="./assets/vender/owl-carosel/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/vender/owl-carosel/owl.theme.default.min.css">
+    
+        <!--  Swiper css  -->
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!--  Swiper css  -->
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- CSS -->
+    
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bgcolor">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1 style="
+                    padding-top: 0px;">Elyse<span>clean</span></h1>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICES
+                      </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/carpet.html">CARPET CLEANING</a></li>
+                                <li><a class="dropdown-item" href="pages/deep.html">DEEP CLEANING</a></li>
+                                <li><a class="dropdown-item" href="pages/desinfecting.html">DESINFECTING SERVICE</a></li>
+                                <li><a class="dropdown-item" href="pages/house.html">HOUSE CLEANING</a></li>
+                                <li><a class="dropdown-item" href="pages/Move.html">MOVING</a></li>
+                                <li><a class="dropdown-item" href="pages/office.html">OFFICE & COMMERCIAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Get a quote-->
+    <div class="container get_a_quote_container my-5">
+        <h1 class="text-center text-dark pb-2">Get a Quote</h1>
+        <h3>NEW REQUEST</h3>
+        <form action="quote.php" method="POST">
+            <!--Contact details-->
+            <h4>Contact details</h4>
+            <div class="form-floating mb-3">
+                <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="First Name">
+                <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="last_name" class="form-control" id="floatingInput" placeholder="Last Name">
+                <label for="floatingInput">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="company_name" class="form-control" id="floatingInput" placeholder="Company Name">
+                <label for="floatingInput">Company Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" name="phone_number" class="form-control" id="floatingInput" placeholder="Phone Number">
+                <label for="floatingInput">Phone Number</label>
+            </div>
+            <!--Address-->
+            <h4>Address</h4>
+            <div class="form-floating mb-3">
+                <input type="text" name="street" class="form-control" id="floatingInput" placeholder="Street">
+                <label for="floatingInput">Street</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="city" class="form-control" id="floatingInput" placeholder="City">
+                <label for="floatingInput">City</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="state" class="form-control" id="floatingInput" placeholder="State">
+                <label for="floatingInput">State</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="zip_code" class="form-control" id="floatingInput" placeholder="Zip Code">
+                <label for="floatingInput">Zip Code</label>
+            </div>
+            <!--Service details-->
+            <h4>Service details</h4>
+            <h5>Property Type</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_1" type="checkbox" value="apartment" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Apartment
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_2" type="checkbox" value="condo" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Condo
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_3" type="checkbox" value="home" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Home
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_4" type="checkbox" value="office" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Office
+                </label>
+            </div>
+            <!--How many bedrooms-->
+            <h5>How Many Bedrooms?</h5>
+            <div class="form-floating">
+                <select class="form-select" name="bedroom_number" id="floatingSelectGrid">
+                  <option selected>Choose an option</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelectGrid">Works with selects</label>
+            </div>
+            <!--How Many Bathrooms?-->
+            <h5>How Many Bathrooms?</h5>
+            <div class="form-floating">
+                <select class="form-select" name="bathroom_number" id="floatingSelectGrid">
+                  <option selected>Choose an option</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelectGrid">Works with selects</label>
+            </div>
+            <!--How Many Half Baths?-->
+            <h5>How Many Half Baths?</h5>
+            <div class="form-floating">
+                <select class="form-select" name="half_bath_number" id="floatingSelectGrid">
+                  <option selected>Choose an option</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelectGrid">Works with selects</label>
+            </div>
+            <!--Sq. Ft. Of The Property?-->
+            <h5>Sq. Ft. Of The Property?</h5>
+            <div class="form-floating">
+                <select class="form-select" name="sq_ft_number" id="floatingSelectGrid">
+                  <option selected>Choose an option</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="3">Three</option>
+                </select>
+                <label for="floatingSelectGrid">Works with selects</label>
+            </div>
+            <!--Select The Service(s) You Need-->
+            <h5>Select The Service(s) You Need</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_5" type="checkbox" value="Standard Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Standard Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_6" type="checkbox" value="Deep Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Deep Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_7" type="checkbox" value="Move In/Out Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Move In/Out Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_8" type="checkbox" value="Carpet Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Carpet Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_9" type="checkbox" value="Office Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Office Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_10" type="checkbox" value="Electrostatic Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Electrostatic Cleaning
+                </label>
+            </div>
+            <!--Do You Have Any Pets?-->
+            <h5>Do You Have Any Pets?</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_11" type="checkbox" value="No" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  No
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_12" type="checkbox" value="1 Pet" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  1 Pet
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_13" type="checkbox" value="2 Pets" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  2 Pets
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_14" type="checkbox" value="3 Pets" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  3 Pets
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_15" type="checkbox" value="4 Pets" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  4 Pets
+                </label>
+            </div>
+            <!--Cleaning Frequency-->
+            <h5>Cleaning Frequency</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_16" type="checkbox" value="One Time Cleaning" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  One Time Cleaning
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_17" type="checkbox" value="Every Week" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Every Week
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_18" type="checkbox" value="Every 2 Weeks" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Every 2 Weeks
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_19" type="checkbox" value="Every 4 Weeks " id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Every 4 Weeks 
+                </label>
+            </div>
+            <!--ANY EXTRAS NEEDED?-->
+            <h4>ANY EXTRAS NEEDED?</h5>
+            <h5>Select Any Extras (optional)</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_20" type="checkbox" value="Clean Interior Windows" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Clean Interior Windows
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_21" type="checkbox" value="Hand Detail Blinds" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Hand Detail Blinds
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_22" type="checkbox" value="Hand Detail Baseboards" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Hand Detail Baseboards
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_23" type="checkbox" value="Clean Inside Kitchen Cabinets" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Clean Inside Kitchen Cabinets
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_24" type="checkbox" value="Clean Inside Fridge" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Clean Inside Fridge
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_25" type="checkbox" value="Clean Inside Oven" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Clean Inside Oven
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_26" type="checkbox" value="Clean Dishes" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Clean Dishes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_27" type="checkbox" value="Sweep Inside Garage" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Sweep Inside Garage
+                </label>
+            </div>
+            <!--Last details-->
+            <h4>Last details</h4>
+            <h5>Would you like to pay in cash & and get an extra 5% discount?</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_28" type="checkbox" value="Yes Please!" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Yes Please!
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_29" type="checkbox" value="No, I would like to pay with a credit card." id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    No, I would like to pay with a credit card.
+                </label>
+            </div>
+            <!--Special Instructions & Notes-->
+            <h5>Special Instructions & Notes (optional)</h5>
+            <div class="form-floating">
+                <textarea name="special_instruction" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <!--How did you har about us?-->
+            <h5>How did you har about us?</h5>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_30" type="checkbox" value="Google" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Google
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_31" type="checkbox" value="Yeld" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Yeld
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_32" type="checkbox" value="Facebook" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Facebook
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_33" type="checkbox" value="Craigslist" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Craigslist
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_34" type="checkbox" value="Email" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Email
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_35" type="checkbox" value="NextDoor" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    NextDoor
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_36" type="checkbox" value="Offer Up" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Offer Up
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="checkbox_37" type="checkbox" value="Repeat Customer" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Repeat Customer
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="btn w-30 my-3 py-3 px-5" type="submit" class="btn text-center btn-book-now" style="background: var(--brand); color: #fff;">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!--Get a quote-->
+
+    <!-------------x Footer section x-------------->
+    <footer class="footer-distributed" style="position: relative;bottom: 0;">
+        <div class="footer-left">
+            <h3>ElyseClean<span>logo</span></h3>
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                <!--<a href="#">Blog</a>-->
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <!--<a href="#">Faq</a>-->
+                <a href="#contact">Contact</a>
+            </p>
+            <p class="footer-company-name" style="color: #fff;">
+                <a style="color: #fff;" href="https://www.flaticon.com/free-icons/carpet" title="carpet icons">Carpet icons created by Freepik - Flaticon</a> <br>
+                <br> ElyseClean &copy; 2022</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker" style="background: var(--brand);"></i>
+                <p style="padding-top: 0;"><span><!--432 S. Ts Ave--></span> California USA</p>
+            </div>
+            <div>
+                <i class="fa fa-phone" style="background: var(--brand);"></i>
+                <p style="padding-top: 0;">(424) 465-1228</p>
+            </div>
+            <div>
+                <!--<i class="fa fa-envelope"></i>-->
+                <!--<p><a href="mailto:richlystudiosit@gmail.com">richlystudiosit@gmail.com</a></p>-->
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about" style="color: #fff;">
+                <span>About the company</span> Reliable house cleaning professionals serving the greater seattle area. Professionalism is vital in order to achieve our high standards of quality and meticulous attention to detail.
+                <div class="footer-icons">
+                    <a href="#" style="background: var(--brand);"><i class="fa fa-facebook"></i></a>
+                    <a href="#" style="background: var(--brand);"><i class="fa fa-twitter" style="background: var(--brand);"></i></a>
+                    <a href="#" style="background: var(--brand);"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" style="background: var(--brand);"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+        </div>
+    </footer>
+    <!--------x Footer section x-------------->
+        <!------------jquery--------->
+        <script src="assets/vender/jquery/jquery.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>            
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>        
+        <!-- JavaScript Bundle with Popper -->        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+        <!-- BoxIcons js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js" integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+        <!-- owl-carosel js -->
+        <script src="./assets/vender/owl-carosel/owl.carousel.min.js"></script>        
+        <!-- Javascript script -->
+        <script src="assets/js/main.js"></script>
+        <!-- Javascript script -->
+</body>
+</html>
