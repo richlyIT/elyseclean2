@@ -1091,3 +1091,8 @@
     /*------------  Responsive  ------------*/
     /*------------ Services section --------*/
 
+    @media (min-width: 1200px){
+        .get_a_quote_container{
+            max-width: 700px;
+        }
+    }
