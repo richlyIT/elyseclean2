@@ -67,30 +67,6 @@
                                 <li><a class="dropdown-item" href="office.html">OFFICE & COMMERCIAL</a></li>
                             </ul>
                         </li>
-                        <!--
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          AREAS
-                        </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Bellevue</a></li>
-                                <li><a class="dropdown-item" href="#">Bothell</a></li>
-                                <li><a class="dropdown-item" href="#">Edmonds</a></li>
-                                <li><a class="dropdown-item" href="#">Everett</a></li>
-                                <li><a class="dropdown-item" href="#">Kirkland</a></li>
-                                <li><a class="dropdown-item" href="#">Lynnwood</a></li>
-                                <li><a class="dropdown-item" href="#">Mercer Island</a></li>
-                                <li><a class="dropdown-item" href="#">Mukilteo</a></li>
-                                <li><a class="dropdown-item" href="#">Redmond</a></li>
-                                <li><a class="dropdown-item" href="#">Shoreline</a></li>
-                            </ul>
-                        </li>
--->
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
--->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
@@ -172,7 +148,7 @@
                     <div class="col-lg-6 py-5 border-1">
                         <div class="h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
                             <h3 class="text-dark mb-4">Book For A Service</h3>
-                            <form action="book.php" method="GET">
+                            <form action="./stripe/index.php" method="GET">
                                 <div class="row g-3 border-1">
                                     <section>
                                         <div class="col-12 col-lg-10 offset-lg-1 text-dark">
@@ -205,7 +181,7 @@
                                                     <option selected type="text ">Select A Service</option>
                                                     <option>House cleaning</option>
                                                     <option>Deep cleaning</option>
-                                                    <option>office cleaning</option>
+                                                    <option>Office cleaning</option>
                                                     <option>Desinfecting cleaning</option>
                                                     <option>Move in/out cleaning</option>
                                                 </select><br>
@@ -235,42 +211,42 @@
                                                 <div class="col-12 col-sm-6 py-4">
                                                     <select name="bedroom" id="bedroom" class="form-select border-1" style="height: 55px;  width: 220px;">
                                                         <option selected type="text">Bedrooms(10$/each)</option>
-                                                        <option>1 Bedroom</option>
-                                                        <option>2 Bedrooms</option>
-                                                        <option>3 Bedrooms</option>
-                                                        <option>4 Bedrooms</option>
-                                                        <option>5 Bedrooms</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
                                                     </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4">
                                                     <select name="bathroom" id="bathroom" class="form-select border-1 " style="height: 55px; width: 220px; ">
                                                         <option selected type="text">Bathrooms(10$/each)</option>
-                                                        <option>1 Bathroom</option>
-                                                        <option>2 Bathrooms</option>
-                                                        <option>3 Bathrooms</option>
-                                                        <option>4 Bathrooms</option>
-                                                        <option>5 Bathrooms</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
                                                     </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4">
                                                     <select id="half_bathroom" name="half_bathroom" class="form-select border-1 " style="height: 55px; width: 220px;">
                                                         <option selected type="text">Half Baths(10$/each)</option>
-                                                        <option>1 half bathroom</option>
-                                                        <option>2 half bathrooms</option>
-                                                        <option>3 half bathrooms</option>
-                                                        <option>4 half bathrooms</option>
-                                                        <option>5 half bathrooms</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
                                                     </select>
                                                 </div>
 
                                                 <div class="col-12 col-sm-6 py-4" id="zozo1">
                                                     <select id="sq_ft"  name="sq_ft" class="form-select border-1 " style="height: 55px; width: 220px;">
                                                         <option selected type="text">Sq Ft</option>
-                                                        <option>1 - 999 Sq Ft</option>
-                                                        <option>1000 - 1499 Sq Ft</option>
-                                                        <option>1500 - 1999 Sq Ft</option>
+                                                        <option>1 - 999</option>
+                                                        <option>1000 - 1499</option>
+                                                        <option>1500 - 1999</option>
                                                     </select>
                                                 </div>
                                             </div>
