@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-sm navbar-light fixed-top bgcolor">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <h1>Elyse<span>clean</span></h1>
+                    <h1 style="padding-top: 0px;">Elyse<span>clean</span></h1>
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -49,11 +49,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#">HOME</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT</a>
-                        </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         SERVICES
@@ -177,13 +172,11 @@
                                         <section class="container2">
                                             <h4>Service type(20$/each)</h4>
                                             <div class="col-12 col-sm-6 ">
-                                                <select name="servicetype" class="form-select border-1 " style="height: 55px; ">
-                                                    <option selected type="text ">Select A Service</option>
-                                                    <option>House cleaning</option>
-                                                    <option>Deep cleaning</option>
-                                                    <option>Office cleaning</option>
-                                                    <option>Desinfecting cleaning</option>
-                                                    <option>Move in/out cleaning</option>
+                                                <select name="frequency" class="form-select border-1 " style="height: 55px; ">
+                                                    <option selected type="text ">Frequency</option>
+                                                    <option>Every Week</option>
+                                                    <option>Every 2 Weeks</option>
+                                                    <option>Every 4 Weeks</option>
                                                 </select><br>
                                             </div>
                                     
@@ -195,11 +188,18 @@
                                         <hr>
 
                                         <section>
-                                            <div>
-                                                <h4>FREQUENCY(25$/each week)</h4><br>
-                                                <button name="frequency1" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every week">Every week</button>
-                                                <button name="frequency2" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every 2 weeks">Every 2 weeks</button>
-                                                <button name="frequency3" id="frequency" class="btn btn-dark w-30 py-2 " type="button" style="border-bottom-color: rgb(255, 255, 255);" value="Every 4 weeks">Every 4 weeks</button>
+                                            <div class="container2">
+                                                <h4>Service type (25$/each week)</h4><br>
+                                                <div class="col-12 col-sm-6 ">
+                                                    <select name="servicetype" class="form-select border-1 " style="height: 55px; ">
+                                                        <option selected type="text ">Select A Service</option>
+                                                        <option>House cleaning</option>
+                                                        <option>Deep cleaning</option>
+                                                        <option>Office cleaning</option>
+                                                        <option>Desinfecting cleaning</option>
+                                                        <option>Move in/out cleaning</option>
+                                                    </select><br>
+                                                </div>
                                                 <h2><br></h2>
                                             </div>
                                         </section>
@@ -386,24 +386,7 @@
                                             <div class="col-12 col-sm-6 ">
                                                 <input type="text" name="apartUnit" class="form-control border-1 " placeholder="Apt/Unit " style="height: 55px; "><br>
                                             </div>
-                                        </section>
-                                        <hr>
-                                        <section class="container7">
-                                            <h3>PAYMENT</h3>
-                                            <p>Add a new card</p>
-                                            <div class="col-12 col-sm-6 ">
-                                                <input type="text" name="cardnumber" class="form-control border-1 " placeholder="Card number" style="height: 55px; "><br>
-                                            </div>
-                                            <div class="col-12 col-sm-6 CreditCardBox">
-                                                <span class="px-4">Expiration Date</span>
-                                                <input type="number" name="ExpDate" class="form-control border-1 " placeholder="MM/YYYY" style="height: 55px; "><br>
-                                            </div>
-                                            <div class="col-12 col-sm-6 py-4 CreditCardBox">
-                                                <span class="px-4">CCV</span>
-                                                <input type="number" name="CCV" class="form-control border-1 " placeholder="CCV" style="height: 55px; "><br>
-                                            </div>
-
-                                        </section>
+                                        </section>                                        
                                         </div>
                                         <div class="col-12 ">
                                             <button class="btn btn-dark w-100 py-3 " type="submit ">Book Now</button>

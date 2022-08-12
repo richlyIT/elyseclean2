@@ -35,7 +35,7 @@ async function handleSubmit(e) {
     elements,
     confirmParams: {
       // Make sure to change this to your payment completion page
-      return_url: "http://localhost/checkout.html",
+      return_url: "http://localhost/elyseclean__v2/elyseclean2/stripe/charge.php",
     },
   });
 

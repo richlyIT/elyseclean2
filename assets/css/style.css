@@ -1096,3 +1096,92 @@
             max-width: 700px;
         }
     }
+
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+
+.service-details .services-list {
+    padding: 10px 30px;
+    border: 1px solid #d5d7da;
+    margin-bottom: 20px;
+}
+
+.service-details .services-list a {
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+    padding: 8px 0 8px 15px;
+    border-left: 3px solid #d9e3e8;
+    margin: 20px 0;
+    color: var(--color-secondary);
+    transition: 0.3s;
+}
+
+.service-details .services-list a.active {
+    font-weight: 700;
+    border-color: var(--color-primary);
+}
+
+.service-details .services-list a:hover {
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.service-details .services-img {
+    margin-bottom: 20px;
+}
+
+.service-details h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.service-details h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-details p {
+    font-size: 15px;
+}
+
+.service-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.service-details ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.service-details ul i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: var(--color-primary);
+}
+
+
+/*----RESPONSIVNESS------*/
+
+@media (max-width: 1280px) {
+    #booker {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    #booker {
+        padding-right: 20px;
+    }
+}

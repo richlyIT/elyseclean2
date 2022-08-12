@@ -1,7 +1,5 @@
 <?php
-
 require 'vendor/autoload.php';
-
 // This is your test secret API key.
 \Stripe\Stripe::setApiKey('sk_test_51LUMHzAFYYcpzGe9iBce3w1jAdywbXXU0hS6OMMhcK1IoypH2xn3OCX35Csbt0quc76rqRhEewWILhFX89rISSUK00iWigdpX1');
 
@@ -11,19 +9,25 @@ function calculateOrderAmount(array $items): int {
     // people from directly manipulating the amount on the client
     return 1400;
 }
-$montant = 2000;
+$stripe = new \Stripe\StripeClient(
+    'sk_test_51LUMHzAFYYcpzGe9iBce3w1jAdywbXXU0hS6OMMhcK1IoypH2xn3OCX35Csbt0quc76rqRhEewWILhFX89rISSUK00iWigdpX1'
+  );
+  $stripe->customers->create([
+    'description' => 'Deo Obomby',
+    'email' => 'deoobomby@gmail.com'
+  ]);
+
 header('Content-Type: application/json');
 
 try {
     // retrieve JSON from POST body
     $jsonStr = file_get_contents('php://input');
     $jsonObj = json_decode($jsonStr);
-
+    
     // Create a PaymentIntent with amount and currency
     $paymentIntent = \Stripe\PaymentIntent::create([
-        'amount' => $montant,
+        'amount' => calculateOrderAmount($jsonObj->items),
         'currency' => 'eur',
-        'customer' => 'deo',
         'automatic_payment_methods' => [
             'enabled' => true,
         ],
