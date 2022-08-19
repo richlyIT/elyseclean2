@@ -1185,3 +1185,194 @@
         padding-right: 20px;
     }
 }
+
+/*--------------------------------------------------------------
+# FAQ's Section
+--------------------------------------------------------------*/
+
+.faq .services-list {
+    width: 1000px;
+    margin-left: 5%;
+    padding: 10px 30px;
+    border: 1px solid #d5d7da;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: .8rem;
+}
+
+.faq .services-list a {
+    text-decoration: none;
+    padding: 8px 0 8px 15px;
+    margin: 20px 0;
+    color: var(--color-secondary);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.having {
+    text-align: center;
+}
+
+.services-items .down {
+    align-items: flex-end;
+}
+
+.services-items .up {
+    display: none;
+}
+
+.faq .container {
+    align-items: center;
+}
+
+.services-list .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-list .answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 2rem;
+}
+
+.services-list:target .answer {
+    max-height: 20rem;
+}
+
+.services-list:target .services-items .down {
+    display: none;
+}
+
+.services-list:target .services-items .up {
+    display: block;
+}
+
+.services-list:target .answer::after {
+    display: none;
+}
+
+.faq .services-list a.active {
+    font-weight: 700;
+    border-color: var(--color-primary);
+}
+
+.faq .services-list a:hover {
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.faq h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.faq h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.faq p {
+    font-size: 15px;
+}
+
+
+/*----RESPONSIVNESS------*/
+
+@media (max-width: 1280px) {
+    .faq .services-list {
+        width: 1000px;
+    }
+    #booker {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .faq .services-list {
+        width: 900px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 912px) {
+    .faq .services-list {
+        width: 700px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 820px) {
+    .faq .services-list {
+        width: 700px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 540px) {
+    .faq .services-list {
+        width: 500px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 414px) {
+    .faq .services-list {
+        width: 380px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 412px) {
+    .faq .services-list {
+        width: 370px;
+    }
+    #booker {
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 395px) {
+    .faq .services-list {
+        width: 350px;
+    }
+    #booker {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .faq .services-list {
+        width: 320px;
+    }
+    #booker {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 280px) {
+    .faq .services-list {
+        width: 250px;
+    }
+    #booker {
+        padding-right: 20px;
+    }
+}
