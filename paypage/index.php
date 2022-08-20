@@ -60,10 +60,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">HOME</a>
+                            <a class="nav-link active" href="../index.html#">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="../index.html#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         SERVICES
                       </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -160,13 +160,13 @@
             <h3>ElyseClean<span>logo</span></h3>
 
             <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
+                <a href="../index.html#" class="link-1">Home</a>
 
                 <!--<a href="#">Blog</a>-->
 
-                <a href="#services">Services</a>
+                <a href="../index.html#services">Services</a>
 
-                <a href="#about">About</a>
+                <a href="../index.html#about">About</a>
 
                 <!--<a href="#">Faq</a>-->
 

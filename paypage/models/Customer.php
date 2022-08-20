@@ -8,7 +8,7 @@
 
     public function addCustomer($data) {
       // Prepare Query
-      $this->db->query('INSERT INTO customers (id, first_name, last_name, email) VALUES(:id, :first_name, :last_name, :email)');
+      $this->db->query('INSERT INTO customers(id, first_name, last_name, email) VALUES(:id, :first_name, :last_name, :email)');
 
       // Bind Values
       $this->db->bind(':id', $data['id']);
