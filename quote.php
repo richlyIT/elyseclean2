@@ -72,14 +72,14 @@ error_reporting(0);
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp-relay.sendinblue.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'richlystudiosit@gmail.com';                     //SMTP username
-        $mail->Password   = 'd0vRb6BzSOjFm5gD';                               //SMTP password
+        $mail->Username   = 'richlystudios.itdep@gmail.com';                     //SMTP username
+        $mail->Password   = 'dWqEAnCmbSBMZQO7';                               //SMTP password
         $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('richlystudiosit@gmail.com', 'Richly Studios');
-        $mail->addAddress('deoobomby@gmail.com');     //Add a recipient
+        $mail->setFrom('richlystudios.itdep@gmail.com', 'Richly Studios');
+        $mail->addAddress('richlystudiosit@gmail.com');     //Add a recipient
     
         $body = "<p><h1>Hello this is a message coming from Elyseclean website (<span style='color: orange;'> Get a quote</span>)</h1> \r".
         "Customer First Name: ".$first_name ."<br>\r".

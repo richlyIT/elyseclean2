@@ -1,9 +1,10 @@
 <?php
     require_once('./vendor/autoload.php');
-    require_once('./config/db.php');
+    /*require_once('./config/db.php');
     require_once('./lib/pdo_db.php');
     require_once('./models/Customer.php');
     require_once('./models/Transaction.php');
+    */
 
     \Stripe\Stripe::setApiKey('sk_test_51LUMHzAFYYcpzGe9iBce3w1jAdywbXXU0hS6OMMhcK1IoypH2xn3OCX35Csbt0quc76rqRhEewWILhFX89rISSUK00iWigdpX1');
 
@@ -32,6 +33,7 @@
         'customer' => $customer->id
     ));
 
+    /*
     //Get customer data
     $customerData = [
         'id' => $charge->customer,
@@ -61,5 +63,6 @@
 
     // Add Transaction To DB
     $transaction->addTransaction($transactionData);
+    */
 
     header('Location:  success.php?tid='.$charge->id."&product=".$charge->description);
