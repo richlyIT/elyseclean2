@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../assets/images/Deep-Cleaning-Services-in-Pune.jpg");
+
+    /* Set a specific height */
+
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
